@@ -31,6 +31,12 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
-    "zxcvbn": "^4.4.2"
-  }
+    "zxcvbn": "^4.4.2",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
